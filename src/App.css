@@ -1,0 +1,88 @@
+css
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.app {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px #00000015;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+h1 {
+  color: #6366f1;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #6366f1;
+  color: white;
+  cursor: pointer;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 5px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.task span {
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+button.delete {
+  background: #ef4444;
+}
+
+@media (max-width: 480px) {
+  .app {
+    margin: 20px 12px;
+    padding: 18px;
+  }
+
+  .input-box {
+    flex-direction: column;
+  }
+}
